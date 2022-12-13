@@ -1,0 +1,11 @@
+.clients {
+  padding-top: 135px;
+}
+
+.clients__title {
+  margin: 0;
+  margin-bottom: 26px;
+  font-weight: 700;
+  font-size: 24px;
+  color: var(--color-black);
+}
