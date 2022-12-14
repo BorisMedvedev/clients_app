@@ -19,5 +19,15 @@ export const addClientModal = () => {
     createForm.modalTitle,
     createForm.modalForm
   );
+
+  createForm.modalCloseBtn.addEventListener("click", () => {
+    modalOverlay.remove();
+  });
+
+  document.addEventListener("click", (e) => {
+    if (e.target === modalOverlay) {
+      modalOverlay.remove();
+    }
+  });
   return modalOverlay;
 };
