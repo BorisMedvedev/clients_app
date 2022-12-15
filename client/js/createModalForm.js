@@ -1,4 +1,3 @@
-import { addClientModal } from "./addClient.js";
 import { svgContactDefault, svgContactHover } from "./svg.js";
 
 export const createModalForm = () => {

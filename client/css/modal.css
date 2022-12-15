@@ -74,8 +74,10 @@
 }
 
 .modal__save-contact-btn {
+  align-items: center;
   display: block;
   margin: 0 auto;
+  margin-bottom: 5px;
   padding: 12px 35px;
   background-color: var(--color-heliotrope);
   font-family: "Open-sans", sans-serif;
@@ -83,6 +85,10 @@
   font-weight: 600;
   font-size: 14px;
   color: var(--color-white);
+  transition: background-color 0.3s;
+}
+.modal__save-contact-btn:hover {
+  background-color: var(--color-melrose);
 }
 
 .modal__contacts-block {
@@ -94,4 +100,23 @@
   margin: 0 -30px;
   margin-bottom: 25px;
   background-color: var(--color-gray-suit);
+}
+
+.modal__cancel-btn {
+  display: block;
+  margin: 0 auto;
+  border-bottom: 1px solid var(--color-black);
+}
+
+.modal__label {
+  color: var(--color-heliotrope);
+}
+
+.add-btn-svg {
+  margin-right: 4px;
+}
+
+.modal__add-contact-btn {
+  display: flex;
+  flex-direction: row-reverse;
 }
