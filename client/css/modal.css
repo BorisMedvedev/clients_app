@@ -56,8 +56,8 @@
   pointer-events: none;
   border: 1px solid transparent;
   transform-origin: 0 0;
-  transition: opasity 0.1s, transform 0.1s;
   color: var(--color-silver-chalice);
+  transition: opasity 0.1s, transform 0.1s;
 }
 .form__floating > .modal__input:focus ~ label,
 .modal__input .modal__input:not(:placeholder-shown) ~ label {
@@ -124,6 +124,10 @@
 .modal__add-contact-btn {
   display: flex;
   flex-direction: row-reverse;
+  transition: color 0.3s;
+}
+.modal__add-contact-btn:hover {
+  color: var(--color-heliotrope);
 }
 
 .add-btn-svg--default,
