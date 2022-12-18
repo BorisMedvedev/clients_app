@@ -93,6 +93,15 @@ export const createModalForm = () => {
   );
   addContactBtn.append(addContactBtnSvgDefault, addContactBtnSvgHover);
 
+  addContactBtn.addEventListener("mousemove", () => {
+    addContactBtnSvgDefault.classList.remove("add-btn-svg--active");
+    addContactBtnSvgHover.classList.add("add-btn-svg--active");
+  });
+  addContactBtn.addEventListener("mouseleave", () => {
+    addContactBtnSvgDefault.classList.add("add-btn-svg--active");
+    addContactBtnSvgHover.classList.remove("add-btn-svg--active");
+  });
+
   return {
     modalForm,
     modalCloseBtn,

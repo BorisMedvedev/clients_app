@@ -20,6 +20,19 @@ export const addClientModal = () => {
     createForm.modalForm
   );
 
+  createForm.modalForm.addEventListener("submit", (el) => {
+    el.preventDefault();
+
+    let contacts = [];
+    let clientsObj = {};
+
+    clientsObj.name = createForm.inputName.value;
+    clientsObj.surname = createForm.inputSurName.value;
+    clientsObj.lastname = createForm.inputLastName.value;
+    clientsObj.contacts = contacts;
+    console.log(clientsObj);
+  });
+
   createForm.modalCloseBtn.addEventListener("click", () => {
     modalOverlay.remove();
   });
