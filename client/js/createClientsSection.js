@@ -72,7 +72,7 @@ export const createClientsSection = () => {
   sortingDisplayId.textContent = "id";
   sortingDisplayName.textContent = "Фамилия Имя Отчество";
   sortingDisplayCreate.textContent = "Дата и время создания";
-  sortingDisplayEdit.textContent = "Последние изменения";
+  sortingDisplayEdit.textContent = "Последние изменение";
   sortingDisplayContacts.textContent = "Контакты";
   sortingDisplayActions.textContent = "Действия";
   addUserBtn.textContent = "Добавить клиента";

@@ -40,11 +40,8 @@
   background-position: right center;
 }
 
-.display-info__item {
-  margin-right: 70px;
-}
-
 .display-info__item--id {
+  margin-right: 57px;
   padding-left: 13px;
   padding-right: 13px;
 }
@@ -122,6 +119,7 @@
 
 .display-info__item--create,
 .display-info__item--edit {
+  margin-right: 30px;
   background-image: none;
 }
 
@@ -132,4 +130,8 @@
 
 .display-info__sorting {
   font-size: 10px;
+}
+
+.display-info__item--contacts {
+  margin-right: 100px;
 }
