@@ -38,4 +38,20 @@ export const createContactItem = () => {
   contactInput.placeholder = "Введите данные контакта";
   contactInput.type = "text";
   contactDeleteBtn.innerHTML = svgDeleteContact;
+
+  contactDeleteBtn.append(contactDeleteTooltip);
+  contact.append(contactType, contactInput, contactDeleteBtn);
+  contactType.append(contactNameBtn, contactList);
+  contactList.append(
+    contactPhone,
+    contactEmail,
+    contactFb,
+    contactVk,
+    contactOther
+  );
+  return {
+    contact,
+    contactInput,
+    contactDeleteBtn,
+  };
 };

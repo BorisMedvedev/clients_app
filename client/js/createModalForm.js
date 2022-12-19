@@ -1,4 +1,5 @@
 import { svgContactDefault, svgContactHover } from "./svg.js";
+import { createContactItem } from "./createContact.js";
 
 export const createModalForm = () => {
   const modalTitle = document.createElement("h2"),
@@ -100,6 +101,19 @@ export const createModalForm = () => {
   addContactBtn.addEventListener("mouseleave", () => {
     addContactBtnSvgDefault.classList.add("add-btn-svg--active");
     addContactBtnSvgHover.classList.remove("add-btn-svg--active");
+  });
+
+  addContactBtn.addEventListener("click", (el) => {
+    el.preventDefault();
+    const contactsItems = document.getElementsByClassName("contact");
+    if (contactsItems.length < 9) {
+      const contactsItem = createContactItem();
+      contactsBlock.prepend(contactsItem.contact);
+    } else {
+      const contactsItem = createContactItem();
+      contactsBlock.prepend(contactsItem.contact);
+      addContactBtn.classList.remove("modal__add-contact-btn--active");
+    }
   });
 
   return {
