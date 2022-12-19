@@ -104,7 +104,7 @@
   justify-content: center;
   margin: 0 -30px;
   margin-bottom: 25px;
-  background-color: var(--color-gray-suit);
+  background-color: rgba(200, 197, 209, 0.2);
 }
 
 .modal__cancel-btn {
@@ -122,16 +122,46 @@
 }
 
 .modal__add-contact-btn {
-  display: flex;
+  position: relative;
+  display: none;
   flex-direction: row-reverse;
-  transition: color 0.3s;
+  font-family: "Open-Sans";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  color: #333333;
+  transition: color 0.3s, opasity 0.3s, visibility 0.3s;
 }
+
+.modal__add-contact-btn.modal__add-contact-btn--active {
+  display: flex;
+}
+
 .modal__add-contact-btn:hover {
   color: var(--color-heliotrope);
 }
 
-.add-btn-svg--default,
-.add-btn-svg--active {
+.add-btn-svg {
+  position: absolute;
+  left: -19px;
+  top: 2px;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.add-btn-svg--hover {
   opacity: 0;
   visibility: hidden;
+}
+.add-btn-svg--hover.add-btn-svg--active {
+  opacity: 1;
+  visibility: visible;
+}
+
+.add-btn-svg--default {
+  visibility: hidden;
+  opacity: 0;
+}
+.add-btn-svg--default.add-btn-svg--active {
+  opacity: 1;
+  visibility: visible;
 }

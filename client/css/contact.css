@@ -1,0 +1,20 @@
+.contact {
+  display: flex;
+  align-items: center;
+  max-width: 390px;
+  width: 100%;
+}
+.contact__type {
+  position: relative;
+}
+.contact__name-btn {
+  position: relative;
+  padding: 10px 12px;
+  padding-right: 60px;
+  height: 37px;
+  z-index: 1;
+  width: 134px;
+  border: 1px solid #c8c5d1;
+  background-color: #e7e5eb;
+  cursor: pointer;
+}

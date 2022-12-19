@@ -18,7 +18,7 @@ export const createContactItem = () => {
   contactDeleteTooltip.classList.add("contact__tooltip", "site-tooltip");
   contactType.classList.add("contact__type");
   contactNameBtn.classList.add("contact__name-btn");
-  contactList.classList.add("contct__list", "listreset");
+  contactList.classList.add("contct__list", "list-reset");
   contactInput.classList.add("contact__input");
   contactPhone.classList.add("contact__item");
   contactFb.classList.add("contact__item");
