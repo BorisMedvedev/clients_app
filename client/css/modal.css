@@ -145,7 +145,7 @@
 .add-btn-svg {
   position: absolute;
   left: -19px;
-  top: 2px;
+  top: 3px;
   transition: opacity 0.3s, visibility 0.3s;
 }
 .add-btn-svg--hover {
